@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BTLE_Demo_01</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_storm_ninja">StormNinja</string>
+    <string name="send_text">Send Text</string>
+
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+
+    <string name="mldp_not_supported">MLDP is not supported</string>
+    <string name="ble_not_supported">BTLE is not supported</string>
+    <string name="bluetooth_not_supported">Bluetooth is not supported</string>
+    <string name="unknown_device">Unknown device</string>
+
+    <string name="button_red_text">Orange LED</string>
+    <string name="button_orn_text">Red LED</string>
+
+    <string name="title_devices">Storm Ninja BTLE Scan</string>
+
+</resources>

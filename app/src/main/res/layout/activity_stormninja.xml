@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".DeviceList">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Address: "
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Address"
+                android:textSize="16sp"
+                android:id="@+id/deviceAddress" />
+        </LinearLayout>
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="State: "
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="State"
+                android:textSize="16sp"
+                android:id="@+id/connectionState"/>
+        </LinearLayout>
+        <View
+            android:id="@+id/separator"
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:background="@android:color/darker_gray"
+            android:visibility="visible" />
+        <TextView android:text="@string/hello_world"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:id="@+id/getsomeText"
+            android:textColor="@color/SteelBlue"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:textSize="18dp"
+            android:id="@+id/sendsomeText"
+            android:hint="Enter text to send.."
+            android:autoText="false"
+            android:layout_weight="0.03" />
+        <Button
+            android:id="@+id/buttonSendMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send_text" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ToggleButton
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/button_orn_text"
+                android:id="@+id/toggleButtonRed"
+                android:textOff="@string/button_orn_text"
+                android:textOn="@string/button_orn_text"/>
+            <ToggleButton
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/button_red_text"
+                android:id="@+id/toggleButtonOrn"
+                android:textOff="@string/button_red_text"
+                android:textOn="@string/button_red_text"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
