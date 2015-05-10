@@ -105,6 +105,7 @@ public class DeviceControlActivity extends Activity {
         mConnectionState = (TextView) findViewById(R.id.connectionState);               //TextView that will display the connection state
 
         my_ninja = new StormNinja();                                                    //Create a new Storm Ninja object
+        my_ninja.sn_buffer = " ";                                                       //Initialize storm ninja string object
 
         storm_ninja_Text = (TextView) findViewById(R.id.getsomeText);                   //TextView that will display the Storm Ninja MLDP messages
 
@@ -267,7 +268,8 @@ public class DeviceControlActivity extends Activity {
             @Override
             public void run() {
                 mConnectionState.setText(resourceId);                                   //Update text to say "Connected" or "Disconnected"
-                storm_ninja_Text.setText("");                                           //Reset die text to blank when connection changes
+                my_ninja.sn_buffer = " ";
+                storm_ninja_Text.setText(my_ninja.sn_buffer);                           //Reset die text to blank when connection changes
             }
         });
     }
